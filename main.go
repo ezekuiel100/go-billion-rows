@@ -7,6 +7,7 @@ import (
 	"os"
 	"strconv"
 	"strings"
+	"time"
 )
 
 type Stats struct {
@@ -18,6 +19,8 @@ type Stats struct {
 
 func main() {
 	stats := make(map[string]Stats)
+
+	start := time.Now()
 
 	file, err := os.Open("data.txt")
 	if err != nil {
@@ -60,4 +63,7 @@ func main() {
 		fmt.Println(city, "Avg=", avg, "min=", value.min, "max=", value.max)
 	}
 
+	finish := time.Now()
+	duration := finish.Sub(start)
+	fmt.Print(duration.Seconds())
 }
