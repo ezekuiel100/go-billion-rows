@@ -3,7 +3,6 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"math"
 	"os"
 	"strconv"
 	"strings"
@@ -26,7 +25,6 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-
 	defer file.Close()
 
 	r := bufio.NewReader(file)
@@ -35,10 +33,14 @@ func main() {
 		line, _, err := r.ReadLine()
 		if len(line) > 0 {
 			data := strings.Split(string(line), ";")
-			value, _ := stats[data[0]]
-
+			location, ok := stats[data[0]]
 			n, _ := strconv.ParseFloat(data[1], 64)
-			stats[data[0]] = Stats{sum: value.sum + n, min: min(n, value.min), max: max(n, value.max), count: value.count + 1}
+
+			if !ok {
+				stats[data[0]] = Stats{sum: n, min: n, max: n, count: 1}
+			} else {
+				stats[data[0]] = Stats{sum: location.sum + n, min: min(n, location.min), max: max(n, location.max), count: location.count + 1}
+			}
 		}
 
 		if err != nil {
@@ -47,11 +49,9 @@ func main() {
 	}
 
 	for city, value := range stats {
-		avg := math.Round(value.sum/float64(value.count)*100) / 100
-		fmt.Println(city, "Avg=", avg, "min=", value.min, "max=", value.max)
+		avg := value.sum / float64(value.count)
+		fmt.Printf("%s=%.1f/%.1f/%.1f \n", city, value.min, avg, value.max)
 	}
 
-	finish := time.Now()
-	duration := finish.Sub(start)
-	fmt.Print(duration.Seconds())
+	fmt.Print(time.Since(start))
 }
