@@ -1,0 +1,100 @@
+Osaka;-21.7
+Adelaide;-9.4
+Manchester;-19.5
+Toulouse;20.8
+Manaus;-23.5
+Faro;-27.6
+Lyon;-13.6
+Salvador;15.2
+Los Angeles;-15.1
+Nagoya;22.6
+Coimbra;-13.5
+Philadelphia;-9.1
+Berlin;26.9
+London;22.4
+Turin;-9.2
+Edinburgh;41.8
+Turin;-22.3
+Bari;-22.7
+Palermo;15.3
+Stuttgart;24.7
+Porto Alegre;-20.6
+Bari;-24.1
+Palma;32.2
+San Jose;36.4
+Bologna;13.3
+Sydney;-24.8
+Sapporo;-12.9
+Palma;43.9
+Bristol;35.0
+Bari;-9.2
+Osaka;32.6
+London;-2.2
+Liverpool;20.3
+Saitama;40.2
+Yokohama;-24.6
+Osaka;-17.2
+Perth;-11.6
+Setubal;-1.5
+Osaka;21.6
+Manchester;21.3
+Wollongong;28.2
+Bristol;31.6
+Rome;0.1
+Essen;-14.2
+Chicago;35.7
+Rome;-14.1
+Brasilia;-0.3
+Yokohama;4.4
+Seville;-19.5
+Gold Coast;12.1
+Seville;26.0
+Faro;37.3
+Porto;-2.9
+Montpellier;8.2
+Lyon;26.7
+Nice;-18.5
+London;29.4
+Faro;14.7
+Catania;-1.4
+Setubal;9.7
+New York;34.6
+Hamburg;21.0
+Nice;21.1
+Porto Alegre;26.3
+Wollongong;18.1
+Nice;-8.0
+London;4.0
+Brisbane;35.7
+Seville;42.9
+Newcastle;-16.6
+Toulouse;35.3
+Bilbao;33.1
+Salvador;15.7
+Lille;-2.0
+London;10.5
+Hobart;39.2
+Berlin;14.9
+Belo Horizonte;-28.5
+Bologna;35.9
+Alicante;-12.0
+Madrid;35.9
+Paris;-23.6
+Belo Horizonte;31.2
+Newcastle;10.0
+Strasbourg;-20.4
+Sao Paulo;41.0
+Birmingham;-10.1
+San Diego;1.7
+Edinburgh;39.7
+Canberra;24.7
+Bradford;23.5
+Porto;44.6
+Nagoya;-2.0
+Curitiba;3.9
+Barcelona;-13.1
+Turin;-28.4
+New York;-12.7
+Manchester;-29.5
+Sydney;17.3
+Bristol;-24.9
