@@ -35,22 +35,10 @@ func main() {
 		line, _, err := r.ReadLine()
 		if len(line) > 0 {
 			data := strings.Split(string(line), ";")
+			value, _ := stats[data[0]]
 
-			value, exists := stats[data[0]]
-			if exists {
-				n, err := strconv.ParseFloat(data[1], 64)
-				if err != nil {
-					continue
-				}
-
-				stats[data[0]] = Stats{sum: value.sum + n, min: min(n, value.min), max: max(n, value.max), count: value.count + 1}
-			} else {
-				n, err := strconv.ParseFloat(data[1], 64)
-				if err != nil {
-					continue
-				}
-				stats[data[0]] = Stats{sum: n, min: n, max: n, count: 1}
-			}
+			n, _ := strconv.ParseFloat(data[1], 64)
+			stats[data[0]] = Stats{sum: value.sum + n, min: min(n, value.min), max: max(n, value.max), count: value.count + 1}
 		}
 
 		if err != nil {
