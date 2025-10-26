@@ -54,7 +54,7 @@ func processData(wg *sync.WaitGroup, stats map[string]Stats, lines chan string, 
 
 	for line := range lines {
 		if len(line) > 0 {
-			data := strings.Split(string(line), ";")
+			data := strings.Split(line, ";")
 			if len(data) < 2 {
 				continue
 			}
